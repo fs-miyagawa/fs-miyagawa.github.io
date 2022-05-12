@@ -19,7 +19,8 @@
         for (let i = 0; i < elements.length; i++) {
             let iframe = document.createElement('iframe');
             iframe.setAttribute('src', 'https://local-pro.form-mailer.lvh.me/fms/9a654e4b1');
-            iframe.setAttribute('width', '100%');
+            iframe.style.width = '100%';
+            iframe.style.height = '0';
             elements[i].appendChild(iframe);
         }
       });
