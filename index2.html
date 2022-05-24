@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="ja">
-
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-
-    <title>iframeを設置したページ</title>
   </head>
-
   <body>
+    <div>
+      <p>本番環境 Free版 <a href="https://ssl.form-mailer.jp/fms/e851b01b708578" target="_blank">（元のフォーム）</a></p>
 
-    <div>別の要素</div>
-    <div class="frame"></div>
-    <div>別の要素</div>
+      <!-- この2行を貼り付けることになる -->
+      <script src="https://ssl.form-mailer.jp/formfiles/js/embed.js"></script>
+      <div class="formmailer-embed" data-form-hash="e851b01b708578" data-form-host="ssl.form-mailer.jp"></div>
+    </div>
+
+    <hr>
     
-    <script>
-      document.addEventListener('DOMContentLoaded', (event) => {
-        let elements = document.getElementsByClassName('frame');
-        for (let i = 0; i < elements.length; i++) {
-            let iframe = document.createElement('iframe');
-            iframe.setAttribute('src', 'https://local-pro.form-mailer.lvh.me/fms/9a654e4b1');
-            iframe.style.width = '100%';
-            iframe.style.height = '100%';
-            elements[i].appendChild(iframe);
-        }
-      });
-    </script>
+    <div>
+      <p>本番環境 Pro版 <a href="https://pro.form-mailer.jp/fms/788efc63251594" target="_blank">（元のフォーム）</a></p>
 
+      <!-- この2行を貼り付けることになる -->
+      <script src="https://pro.form-mailer.jp/formfiles/js/embed.js"></script>
+      <div class="formmailer-embed" data-form-hash="788efc63251594" data-form-host="pro.form-mailer.jp"></div>
+    </div>
+
+    <hr>
+
+    <div>
+      <p>本番環境 Business版 <a href="https://business.form-mailer.jp/fms/32eeabb8157119" target="_blank">（元のフォーム）</a></p>
+
+      <!-- この2行を貼り付けることになる -->
+      <script src="https://business.form-mailer.jp/formfiles/js/embed.js"></script>
+      <div class="formmailer-embed" data-form-hash="32eeabb8157119" data-form-host="business.form-mailer.jp"></div>
+    </div>
   </body>
 </html>
